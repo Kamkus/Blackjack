@@ -12,6 +12,7 @@ let kolor = ['-hearts', '-spades', '-clubs', '-diamonds']
 let valueK = 0;
 let valueG = 0;
 
+
 function CreateK()
 {
 let div;
@@ -119,8 +120,6 @@ function Reset()
     gracz.appendChild(gracz_text);
     gracz.appendChild(gracz2);
     button.style.visibility = "visible";
-    valueK = 0;
-    valueG = 0;
     load();
 }
 
@@ -137,23 +136,23 @@ function losowanie()
     return ostateczna;    
 }
 
+
 function add(value)
 {
     let karta;
     let faceback;
-    let pokaz = true;
     let koniec = false;
     let Losuj = losowanie();
     if(value == "krupier")
     {
-        if(valueK<17 && valueK<valueG)
+        if(valueK<17 && (valueK<valueG || valueK == valueG))
         {
             
-         karta = document.createElement('div');
+        karta = document.createElement('div');
         karta.classList.add("flip-card");
         krupier.appendChild(karta);
         valueK = valueK + Losuj[1];
-        }else{pokaz = false; clearInterval(petla); koniec = true;}
+        }else{clearInterval(petla); koniec = true;}
         document.getElementsByClassName('valuek')[0].innerHTML = "Wynik Krupiera: " + valueK;
     }
     else if(value == "gracz")
@@ -164,25 +163,29 @@ function add(value)
         valueG = valueG + Losuj[1];
         console.log(valueG);
         document.getElementsByClassName('valueg')[0].innerHTML = "Wynik gracza: " + valueG;
-        if(valueG > 21)
+        console.log(document.getElementsByClassName('valueg')[0]);
+    }
+    if(koniec)
+    {   
+        if((valueK<valueG && valueG<21) || valueK>21 || valueG == 21)
         {
-            alert("PRZEJEBALES");
-            first_card.getElementsByClassName('flip-card-inner')[0].style.transform = "rotateY(360deg)";
-            document.getElementsByClassName("valuek")[0].innerHTML = "Wynik Krupiera: " + valueK;
+            alert("Wygrales");
             Reset();
             return
         }
-        if(valueG == 21)
+        if((valueK>valueG && valueK<21) || valueK == 21)
         {
-            first_card.getElementsByClassName('flip-card-inner')[0].style.transform = "rotateY(360deg)";
-            document.getElementsByClassName("valuek")[0].innerHTML = "Wynik Krupiera: " + valueK;
-            alert("WYGRALES");
+            alert("Przejebales");
+            Reset();
+            return
+        }
+        if(valueK == valueG)
+        {
+            alert("Remis");
             Reset();
             return
         }
     }
-    if(pokaz)
-    {
         let inner = document.createElement('div');
         inner.className = "flip-card-inner";
         inner.classList.add(Losuj[0]);
@@ -193,22 +196,27 @@ function add(value)
         faceback = document.createElement('div');
         faceback.classList.add("flip-card-back");
         inner.appendChild(faceback);
-    }
-    if(koniec)
-    {
-        if((valueK<valueG && valueG<21) || valueK>21)
+        if(valueG>21)
         {
-            alert("Wygrales111");
-            Reset();
+  	            setTimeout(function() {
+  	        alert("Przegrales!");
+            },50)
+            setTimeout(function() {
+  	        Reset();
+            },50)
             return
         }
-        if((valueK>valueG && valueK<21) || valueK == 21)
+        else if(valueG == 21)
         {
-            alert("Przejebales11");
-            Reset();
+            first_card.getElementsByClassName('flip-card-inner')[0].style.transform = "rotateY(360deg)";
+                setTimeout(function() {
+  	        alert("Wygrales!");
+            },50)
+            setTimeout(function() {
+             Reset();
+            },50)
             return
         }
-    }
     return
 }
 
@@ -239,18 +247,30 @@ function Rotate(card)
 
 function load()
 {
+    valueK = 0;
+    valueG = 0;
     first_card = CreateK();
     CreateG();
     if(valueG == 21)
     {
-        alert("Wygrales BlackJack");
-        Reset();
+        setTimeout(function() {
+  	        alert("Wygrales Blackjack!");
+            first_card.getElementsByClassName('flip-card-inner')[0].style.transform = "rotateY(360deg)";
+            },50)
+        setTimeout(function() {
+  	        Reset();
+            },50)
     }
     else if(valueK == 21)
     {
         first_card.getElementsByClassName('flip-card-inner')[0].style.transform = "rotateY(360deg)";
-        alert("Krupier BlackJack");
-        Reset();
+        document.getElementsByClassName('valuek').innerHTML = "Wynik Krupiera: " + valueK;
+        setTimeout(function() {
+  	        alert("Krupier Blackjack!");
+            },50)
+        setTimeout(function() {
+  	        Reset();
+            },50)
     }
     else
     {

@@ -43,6 +43,13 @@ body
 .krupier_text, .gracz_text
 {
 text-align:center;
+color:whitesmoke;
+}
+
+.valuek, .valueg
+{
+  color:whitesmoke;
+  text-align:center;
 }
 
 /* This container is needed to position the front and back side */
