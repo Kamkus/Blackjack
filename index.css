@@ -1,0 +1,407 @@
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 150px;
+  display:inline-block;
+  margin-left: 1vw;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+body
+{
+  margin:0;
+}
+.container
+{
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image:url(/img/background.png);
+}
+
+.krupier_main, .gracz_main{
+  margin-bottom: 3vh;
+}
+
+.buttons
+{
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  width:100%;
+}
+.stand, .hit, .double
+{
+  margin-right: 3vw;
+  width: 10vw;
+  height: 3vh;
+}
+
+.krupier_text, .gracz_text
+{
+text-align:center;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+
+
+/*karty*/
+
+.two-spades
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/2_of_spades.png);
+  }
+
+.three-spades
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/3_of_spades.png);
+  }
+.four-spades
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/4_of_spades.png);
+  }
+  .five-spades
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/5_of_clubs.png);
+  }
+  .six-spades
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/6_of_clubs.png);
+  }
+  .seven-spades
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/7_of_clubs.png);
+  }
+  .eight-spades
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/8_of_clubs.png);
+  }
+  .nine-spades
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/9_of_clubs.png);
+  }
+  .ten-spades
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/10_of_clubs.png);
+  }
+  .jopek-spades
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/jack_of_spades.png);
+  }
+  .dama-spades
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/queen_of_spades2.png);
+  }
+  .krol-spades
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/king_of_spades2.png);
+  }
+  .as-spades
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/ace_of_spades2.png);
+}
+
+
+
+.two-hearts
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/2_of_hearts.png);
+  }
+
+.three-hearts
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/3_of_hearts.png);
+  }
+.four-hearts
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/4_of_hearts.png);
+  }
+  .five-hearts
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/3_of_hearts.png);
+  }
+  .six-hearts
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/6_of_hearts.png);
+  }
+  .seven-hearts
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/7_of_hearts.png);
+  }
+  .eight-hearts
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/8_of_hearts.png);
+  }
+  .nine-hearts
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/9_of_hearts.png);
+  }
+  .ten-hearts
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/10_of_hearts.png);
+  }
+  .jopek-hearts
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/jack_of_hearts2.png);
+  }
+  .dama-hearts
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/queen_of_hearts2.png);
+  }
+  .krol-hearts
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/king_of_hearts2.png);
+  }
+  .as-hearts
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/ace_of_hearts.png);
+  }
+
+.two-diamonds
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/2_of_diamonds.png);
+  }
+
+.three-diamonds
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/3_of_diamonds.png);
+  }
+.four-diamonds
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/4_of_diamonds.png);
+  }
+  .five-diamonds
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/5_of_diamonds.png);
+  }
+  .six-diamonds
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/6_of_diamonds.png);
+  }
+  .seven-diamonds
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/7_of_diamonds.png);
+  }
+  .eight-diamonds
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/8_of_diamonds.png);
+  }
+  .nine-diamonds
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/9_of_diamonds.png);
+  }
+  .ten-diamonds
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/10_of_diamonds.png);
+  }
+  .jopek-diamonds
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/jack_of_diamonds2.png);
+  }
+  .dama-diamonds
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/queen_of_diamonds2.png);
+  }
+  .krol-diamonds
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/king_of_diamonds2.png);
+  }
+  .as-diamonds
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/ace_of_diamonds.png);
+  }
+
+
+
+
+
+.two-clubs
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/2_of_clubs.png);
+  }
+
+.three-clubs
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/3_of_clubs.png);
+  }
+.four-clubs
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/4_of_clubs.png);
+  }
+  .five-clubs
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/5_of_clubs.png);
+  }
+  .six-clubs
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/6_of_clubs.png);
+  }
+  .seven-clubs
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/7_of_clubs.png);
+  }
+  .eight-clubs
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/8_of_clubs.png);
+  }
+  .nine-clubs
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/9_of_clubs.png);
+  }
+  .ten-clubs
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/10_of_clubs.png);
+  }
+  .jopek-clubs
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/jack_of_clubs2.png);
+  }
+  .dama-clubs
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/queen_of_clubs2.png);
+  }
+  .krol-clubs
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/king_of_clubs2.png);
+  }
+  .as-clubs
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image :url(/img/ace_of_clubs.png);
+  }
+/*koniec kart
+
+/* Style the back side */
+.flip-card-back {
+  background-image: url("https://media.istockphoto.com/photos/bicycle-rider-back-playing-card-design-picture-id157772536?k=20&m=157772536&s=170667a&w=0&h=46bM0a2wuwcddiOzNOHTfS9PcUzjXwNTTCy33SrkC_0=");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
+}
