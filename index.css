@@ -19,7 +19,7 @@ body
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image:url(/img/background.png);
+  background-image:url(img/background.png);
 }
 
 .krupier_main, .gracz_main{
@@ -82,80 +82,80 @@ color:whitesmoke;
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/2_of_spades.png);
+    background-image :url(img/2_of_spades.png);
   }
 
 .three-spades
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/3_of_spades.png);
+    background-image :url(img/3_of_spades.png);
   }
 .four-spades
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/4_of_spades.png);
+    background-image :url(img/4_of_spades.png);
   }
   .five-spades
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/5_of_clubs.png);
+    background-image :url(img/5_of_clubs.png);
   }
   .six-spades
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/6_of_clubs.png);
+    background-image :url(img/6_of_clubs.png);
   }
   .seven-spades
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/7_of_clubs.png);
+    background-image :url(img/7_of_clubs.png);
   }
   .eight-spades
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/8_of_clubs.png);
+    background-image :url(img/8_of_clubs.png);
   }
   .nine-spades
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/9_of_clubs.png);
+    background-image :url(img/9_of_clubs.png);
   }
   .ten-spades
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/10_of_clubs.png);
+    background-image :url(img/10_of_clubs.png);
   }
   .jopek-spades
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/jack_of_spades.png);
+    background-image :url(img/jack_of_spades.png);
   }
   .dama-spades
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/queen_of_spades2.png);
+    background-image :url(img/queen_of_spades2.png);
   }
   .krol-spades
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/king_of_spades2.png);
+    background-image :url(img/king_of_spades2.png);
   }
   .as-spades
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/ace_of_spades2.png);
+    background-image :url(img/ace_of_spades2.png);
 }
 
 
@@ -164,160 +164,160 @@ color:whitesmoke;
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/2_of_hearts.png);
+    background-image :url(img/2_of_hearts.png);
   }
 
 .three-hearts
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/3_of_hearts.png);
+    background-image :url(img/3_of_hearts.png);
   }
 .four-hearts
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/4_of_hearts.png);
+    background-image :url(img/4_of_hearts.png);
   }
   .five-hearts
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/3_of_hearts.png);
+    background-image :url(img/3_of_hearts.png);
   }
   .six-hearts
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/6_of_hearts.png);
+    background-image :url(img/6_of_hearts.png);
   }
   .seven-hearts
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/7_of_hearts.png);
+    background-image :url(img/7_of_hearts.png);
   }
   .eight-hearts
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/8_of_hearts.png);
+    background-image :url(img/8_of_hearts.png);
   }
   .nine-hearts
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/9_of_hearts.png);
+    background-image :url(img/9_of_hearts.png);
   }
   .ten-hearts
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/10_of_hearts.png);
+    background-image :url(img/10_of_hearts.png);
   }
   .jopek-hearts
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/jack_of_hearts2.png);
+    background-image :url(img/jack_of_hearts2.png);
   }
   .dama-hearts
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/queen_of_hearts2.png);
+    background-image :url(img/queen_of_hearts2.png);
   }
   .krol-hearts
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/king_of_hearts2.png);
+    background-image :url(img/king_of_hearts2.png);
   }
   .as-hearts
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/ace_of_hearts.png);
+    background-image :url(img/ace_of_hearts.png);
   }
 
 .two-diamonds
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/2_of_diamonds.png);
+    background-image :url(img/2_of_diamonds.png);
   }
 
 .three-diamonds
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/3_of_diamonds.png);
+    background-image :url(img/3_of_diamonds.png);
   }
 .four-diamonds
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/4_of_diamonds.png);
+    background-image :url(img/4_of_diamonds.png);
   }
   .five-diamonds
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/5_of_diamonds.png);
+    background-image :url(img/5_of_diamonds.png);
   }
   .six-diamonds
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/6_of_diamonds.png);
+    background-image :url(img/6_of_diamonds.png);
   }
   .seven-diamonds
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/7_of_diamonds.png);
+    background-image :url(img/7_of_diamonds.png);
   }
   .eight-diamonds
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/8_of_diamonds.png);
+    background-image :url(img/8_of_diamonds.png);
   }
   .nine-diamonds
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/9_of_diamonds.png);
+    background-image :url(img/9_of_diamonds.png);
   }
   .ten-diamonds
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/10_of_diamonds.png);
+    background-image :url(img/10_of_diamonds.png);
   }
   .jopek-diamonds
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/jack_of_diamonds2.png);
+    background-image :url(img/jack_of_diamonds2.png);
   }
   .dama-diamonds
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/queen_of_diamonds2.png);
+    background-image :url(img/queen_of_diamonds2.png);
   }
   .krol-diamonds
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/king_of_diamonds2.png);
+    background-image :url(img/king_of_diamonds2.png);
   }
   .as-diamonds
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/ace_of_diamonds.png);
+    background-image :url(img/ace_of_diamonds.png);
   }
 
 
@@ -328,80 +328,80 @@ color:whitesmoke;
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/2_of_clubs.png);
+    background-image :url(img/2_of_clubs.png);
   }
 
 .three-clubs
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/3_of_clubs.png);
+    background-image :url(img/3_of_clubs.png);
   }
 .four-clubs
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/4_of_clubs.png);
+    background-image :url(img/4_of_clubs.png);
   }
   .five-clubs
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/5_of_clubs.png);
+    background-image :url(img/5_of_clubs.png);
   }
   .six-clubs
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/6_of_clubs.png);
+    background-image :url(img/6_of_clubs.png);
   }
   .seven-clubs
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/7_of_clubs.png);
+    background-image :url(img/7_of_clubs.png);
   }
   .eight-clubs
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/8_of_clubs.png);
+    background-image :url(img/8_of_clubs.png);
   }
   .nine-clubs
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/9_of_clubs.png);
+    background-image :url(img/9_of_clubs.png);
   }
   .ten-clubs
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/10_of_clubs.png);
+    background-image :url(img/10_of_clubs.png);
   }
   .jopek-clubs
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/jack_of_clubs2.png);
+    background-image :url(img/jack_of_clubs2.png);
   }
   .dama-clubs
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/queen_of_clubs2.png);
+    background-image :url(img/queen_of_clubs2.png);
   }
   .krol-clubs
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/king_of_clubs2.png);
+    background-image :url(img/king_of_clubs2.png);
   }
   .as-clubs
 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image :url(/img/ace_of_clubs.png);
+    background-image :url(img/ace_of_clubs.png);
   }
 /*koniec kart
 
